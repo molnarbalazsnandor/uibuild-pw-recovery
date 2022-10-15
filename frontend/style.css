@@ -1,5 +1,6 @@
 body {
   background-color: #f2f2f2;
+  display: block;
 }
 
 #root {
@@ -11,11 +12,19 @@ body {
   position: absolute;
 }
 
+.recovery {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .header {
   font-family: "Montserrat", sans-serif;
   font-weight: 300;
   font-size: 36px;
   color: #006837;
+  height: auto;
 }
 
 .question {
@@ -47,11 +56,12 @@ body {
   background-color: #f9c582;
   color: #006837;
   border-radius: 50%;
+  position: absolute;
   border: 0px;
-  position: relative;
   bottom: 0px;
   right: 0px;
   margin: 20px;
+  box-sizing: border-box;
 }
 
 @media only screen and (max-width: 520px) {
@@ -64,4 +74,4 @@ body {
   .question input {
     width: calc(100% - 40px);
   }
-} /*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
